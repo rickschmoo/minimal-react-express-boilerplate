@@ -11,7 +11,7 @@ class App extends Component {
   componentDidMount() {
     this.callApi()
       .then(res => this.setState(
-        { response: res.express }
+        { response: res.payload }
       ))
       .catch(err => console.log(err));
   }
